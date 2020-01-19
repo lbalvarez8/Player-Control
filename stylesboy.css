@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+}
+
+.border {
+	margin: 0 auto;
+	width: 980px;
+	height: 600px;
+	position: relative;
+	background-color: #000;
+	padding: 1px;
+	overflow: hidden;
+}
+
+#gameWindow {
+	margin: 0 auto;
+	width: 980px;
+	height: 600px;
+	position: relative;
+	background-color: #ccc;
+	overflow: hidden;
+}
+
+#player {
+	position: absolute;
+}
+
+#player.flip {
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1);
+	-ms-filter: flip;
+	/*IE*/
+	filter: flip;
+	/*IE*/
+}
+
+.obstacle {
+	background-color: #0ABFE4;
+	position: absolute;
+}
